@@ -41,15 +41,13 @@ This is a simple weather application built with Node.js and Express.js that fetc
 
 4. The application will display the current weather information for the specified city.
 
-## Dependencies
+## Environment Variables
 
-- [Express](https://expressjs.com/): Web framework for Node.js
-- [body-parser](https://www.npmjs.com/package/body-parser): Node.js body parsing middleware
+This application requires the use of an API key from OpenWeatherMap to fetch weather data. **Do not** include API keys or other sensitive information directly in your code or in public repositories. Instead, set up an environment variable to securely store your API key.
 
-## API Reference
+1. Sign up for an account on [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) and obtain your API key.
 
-- [OpenWeatherMap API](https://openweathermap.org/api): Provides weather data and forecasts
+2. Set up an environment variable named `OPENWEATHERMAP_API_KEY` on your system and assign it your API key.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   ```bash
+   export OPENWEATHERMAP_API_KEY="your_api_key_here"
